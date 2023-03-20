@@ -30,7 +30,6 @@ public class NotesController {
     return ResponseEntity.ok(noteService.update(note));
   }
 
-  //TODO change userId to authToken
   @GetMapping("/all")
   public ResponseEntity<?> getAll(@RequestParam(name = "userId", required = false) String userId) {
     return ResponseEntity.ok(noteService.findAllByUserId(userId));

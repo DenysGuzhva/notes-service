@@ -2,7 +2,6 @@ package com.notes.notesservice.mapper;
 
 import com.notes.notesservice.dto.Note;
 import com.notes.notesservice.dto.NoteRequest;
-import com.notes.notesservice.entity.LikeEntity;
 import com.notes.notesservice.entity.NoteEntity;
 import com.notes.notesservice.repository.LikeRepository;
 import java.util.List;

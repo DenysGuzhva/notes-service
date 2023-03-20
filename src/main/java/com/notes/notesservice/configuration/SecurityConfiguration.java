@@ -38,7 +38,6 @@ public class SecurityConfiguration {
         .authorizeHttpRequests()
         .requestMatchers("/api/v1/notes").permitAll()
 
-
         .requestMatchers("/api/v1/notes").hasRole("user")
         .requestMatchers("/api/v1/user/create").permitAll()
         .and().build();

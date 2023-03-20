@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class LikeController {
 
   private final LikeService likeService;
-  //TODO auth
+
   @PostMapping("/")
   public void like(@RequestParam(name = "userId")String likingUserId, @RequestParam(name = "noteId")String likedNoteId) {
     likeService.likeNote(likingUserId, likedNoteId);
